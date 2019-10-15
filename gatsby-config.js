@@ -1,25 +1,37 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Tyson Louth`,
     description: `The personal website of Tyson Louth, a Front End Developer from Orillia, Ontario, Canada.`,
-    author: ``,
-    github: `https://github.com/app-generator/gatsbyjs-starter-tailwindplay`,
-    blog: `https://blog.appseed.us/tag/gatsbyjs`,
-    product: `https://appseed.us/apps/gatsbyjs`,
-    docs: `https://docs.appseed.us/apps/gatsbyjs`
+    author: `@louther18`,
+    github: `https://github.com/tlouth19`,
+    twitter: `https://twitter.com/louther18`,
+    linkedIn: `https://ca.linkedin.com/in/tyson-louth-816b6aa9`,
+    email: `tysonlouth@gmail.com`,
+    devTo: `https://dev.to/tlouth19`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`)
+      }
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
-        display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        name: "Tyson Louth",
+	      short_name: "TL",
+	      start_url: "/",
+	      background_color: "#1a202c",
+	      theme_color: "#edf2f7",
+	      display: "minimal-ui",
+        icon: `src/icons/favicon.png`
       }
     },
     `gatsby-plugin-postcss`,
