@@ -10,9 +10,9 @@ function IndexPage() {
     <Layout>
       <SEO title="Front End Developer" keywords={[`developer`, `web developer`, `front end developer`, `react developer`]} />
       <div className="bg-gray-900 h-screen w-screen text-gray-200 flex items-center justify-center font-mono">
-        <div className="max-w-lg flex items-center justify-center p-4">
+        <div className="w-full sm:max-w-lg block sm:flex items-center justify-center p-4">
           <ProfileImage />
-          <div className="flex-auto">
+          <div className="flex-auto mt-2 sm:mt-0 text-center sm:text-left">
             <h1 className="text-xl font-bold loader loader-x-fast">Tyson Louth</h1>
             <p className='loader loader-fast'>
               Senior Front End Developer at{" "}

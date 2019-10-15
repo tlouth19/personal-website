@@ -52,7 +52,7 @@ const Icons = () => {
           }
         ]
         return (
-          <div className="flex items-center mt-2">
+          <div className="flex items-center justify-center sm:justify-start mt-2">
             {icons.map((icon, index) => (
               <a key={index} target="_blank" rel="noopener noreferrer" href={icon.url} className="flex items-center mr-3 loader loader-1">
                 <img src={icon.icon} className="h-5 hover:h-4" alt={icon.alt} title={icon.alt} />
