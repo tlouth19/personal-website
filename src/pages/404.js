@@ -7,7 +7,7 @@ function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <div className="bg-black h-screen w-screen text-white flex items-center justify-center p-4 font-mono">
+      <div className="bg-black h-screen w-screen text-white flex items-center justify-center p-4 font-mono bg-gray-900 text-gray-100">
         <div className="max-w-md flex items-center justify-center">
           <h1 className="text-xl font-bold">404 Not Found</h1>
         </div>

@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Tyson Louth`,
     description: `The personal website of Tyson Louth, a Front End Developer from Orillia, Ontario, Canada.`,
+    siteUrl: 'https://www.tysonlouth.com',
     author: `@louther18`,
     github: `https://github.com/tlouth19`,
     twitter: `https://twitter.com/louther18`,
