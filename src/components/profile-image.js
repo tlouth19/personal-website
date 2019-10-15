@@ -7,7 +7,7 @@ const ProfileImage = () => (
     query={query}
     render={(data) => (
       <div className='flex justify-center'>
-        <div className="w-20 h-20 mr-0 sm:mr-4 rounded-full overflow-hidden flex items-center loader loader-fast justify-center border-2 border-gray-200">
+        <div className="w-32 h-32 mr-0 sm:mr-4 rounded-full overflow-hidden flex items-center loader loader-fast justify-center border-2 border-gray-800">
           <Img title="Profile Image" alt="Profile Image" className="w-full h-full" fixed={data.file.childImageSharp.fixed} />
         </div>
       </div>
@@ -21,7 +21,7 @@ const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 80, height: 80) {
+        fixed(width: 128, height: 128) {
           ...GatsbyImageSharpFixed
         }
       }
