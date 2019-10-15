@@ -13,8 +13,8 @@ function IndexPage() {
         <div className="w-full sm:max-w-xl block sm:flex items-center justify-center p-4">
           <ProfileImage />
           <div className="flex-auto mt-2 sm:mt-0 text-center sm:text-left">
-            <h1 className="text-2xl font-bold loader loader-x-fast">Tyson Louth</h1>
-            <p className='loader loader-fast'>
+            <h1 className="text-2xl font-bold loader loader-fast">Tyson Louth</h1>
+            <p className='loader text-gray-400'>
               Senior Front End Developer at{" "}
               <a href="https://caredove.com" target="_blank" rel="noopener noreferrer" className="underline">
                 Caredove

@@ -52,13 +52,16 @@ const Icons = () => {
           }
         ]
         return (
-          <div className="flex items-center justify-center sm:justify-start pt-3 mt-3 pb-2 border-t border-gray-800">
-            {icons.map((icon, index) => (
-              <a key={index} target="_blank" rel="noopener noreferrer" href={icon.url} className="flex items-center mr-4 loader loader-1">
-                <img src={icon.icon} className="h-6" alt={icon.alt} title={icon.alt} />
-              </a>
-            ))}
-          </div>
+          <>
+            <div className='mt-3 pb-2 border-t-2 border-gray-800 loader loader-slow'/>
+            <div className="flex items-center justify-center sm:justify-start py-2 loader loader-x-slow">
+              {icons.map((icon, index) => (
+                <a key={index} target="_blank" rel="noopener noreferrer" href={icon.url} className="flex items-center mr-4">
+                  <img src={icon.icon} className="h-6" alt={icon.alt} title={icon.alt} />
+                </a>
+              ))}
+            </div>
+          </>
         )
       }}
     />
