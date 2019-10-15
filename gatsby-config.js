@@ -1,13 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `TailwindPlay`,
-    description: `GatsbyJS Starter styled with Tailwind CSS`,
-    author: `@Sm0keDev`,
+    title: `Tyson Louth`,
+    description: `The personal website of Tyson Louth, a Front End Developer from Orillia, Ontario, Canada.`,
+    author: ``,
     github: `https://github.com/app-generator/gatsbyjs-starter-tailwindplay`,
     blog: `https://blog.appseed.us/tag/gatsbyjs`,
     product: `https://appseed.us/apps/gatsbyjs`,
     docs: `https://docs.appseed.us/apps/gatsbyjs`
-
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,4 +31,4 @@ module.exports = {
       }
     }
   ]
-};
+}

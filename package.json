@@ -1,8 +1,8 @@
 {
-  "name": "@oddstronaut/gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.25",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "personal-website",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Tyson Louth",
   "dependencies": {
     "ftp-deploy": "^2.3.3",
     "gatsby": "2.10.4",
@@ -16,12 +16,7 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
-  ],
+  "keywords": [],
   "license": "MIT",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
