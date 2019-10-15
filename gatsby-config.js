@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,6 +42,13 @@ module.exports = {
         tailwind: true,
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-120787737-1",
+        head: false
+      },
     }
   ]
 }
