@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Tyson Louth`,
     description: `The personal website of Tyson Louth, a Front End Developer from Orillia, Ontario, Canada.`,
-    siteUrl: 'https://www.tysonlouth.com',
+    siteUrl: "https://www.tysonlouth.com",
     author: `@louther18`,
     github: `https://github.com/tlouth19`,
     twitter: `https://twitter.com/louther18`,
@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,11 +28,11 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Tyson Louth",
-	      short_name: "TL",
-	      start_url: "/",
-	      background_color: "#1a202c",
-	      theme_color: "#edf2f7",
-	      display: "minimal-ui",
+        short_name: "TL",
+        start_url: "/",
+        background_color: "#1a202c",
+        theme_color: "#edf2f7",
+        display: "minimal-ui",
         icon: `src/icons/favicon.png`
       }
     },
@@ -49,7 +49,7 @@ module.exports = {
       options: {
         trackingId: "UA-120787737-1",
         head: false
-      },
+      }
     }
   ]
 }
