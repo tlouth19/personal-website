@@ -46,14 +46,14 @@ function IndexPage() {
               company: "BitCine Technologies",
               date: "June 2015 to May 2019",
               role: "Lead Front End Developer",
-              exp: "React,Redux,Gatsby,TypeScript,Node.js,PHP,Laravel,AWS,Vue,CSS-in-JS,SASS,LESS,S3,Lambda,Webpack,Rollup",
+              exp: "React,Redux,Gatsby,TypeScript,Node.js,PHP,Laravel,AWS,Vue,CSS-in-JS,SASS,LESS,S3,Lambda,Webpack,Gulp",
               location: "Toronto, Ontario, Canada"
             },
             {
               company: "Freelance",
               date: "Jan 2013 to June 2015",
               role: "Web Developer",
-              exp: "jQuery,React,Wordpress,Drupal,HTML,CSS,PHP",
+              exp: "jQuery,React,Wordpress,Drupal,HTML,CSS,PHP,Gulp",
               location: "Orillia, Ontario, Canada"
             }
           ].map((job, index) => (
@@ -66,7 +66,7 @@ function IndexPage() {
               <p className="text-sm mb-2">{job.role}</p>
               <ul className="flex flex-wrap items-start">
                 {job.exp.split(",").map((e) => (
-                  <li key={e} className="bg-gray-400 text-gray-700 font-bold rounded px-1 text-xs mr-2 mt-2">
+                  <li key={e} className="bg-gray-400 text-gray-700 rounded px-1 text-xs mr-2 mt-2">
                     {e}
                   </li>
                 ))}
