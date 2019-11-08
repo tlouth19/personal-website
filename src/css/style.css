@@ -60,37 +60,3 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-
-@keyframes loader {
-  from {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.loader {
-  opacity: 0;
-  transform: translateY(5px);
-  animation: loader 0.2s linear forwards;
-  animation-delay: 0.6s;
-}
-
-.loader-x-slow {
-  animation-delay: 1s;
-}
-
-.loader-slow {
-  animation-delay: 0.8s;
-}
-
-.loader-fast {
-  animation-delay: 0.2s;
-}
-
-.loader-x-fast {
-  animation-delay: 0s;
-}

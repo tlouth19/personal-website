@@ -9,12 +9,12 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="Front End Developer" keywords={[`developer`, `web developer`, `front end developer`, `react developer`]} />
-      <section className="h-screen w-screen flex items-center justify-center p-4">
+      <section className="fadeUp w-screen flex items-center justify-center p-4">
         <div className="w-full sm:max-w-xl block sm:flex items-center justify-center">
           <ProfileImage />
           <div className="flex-auto mt-2 sm:mt-0 text-center sm:text-left">
-            <h1 className="text-2xl font-bold loader loader-fast">Tyson Louth</h1>
-            <p className="loader text-gray-400">
+            <h1 className="text-2xl font-bold">Tyson Louth</h1>
+            <p className="text-gray-400">
               Senior Front End Developer at{" "}
               <a href="https://caredove.com" target="_blank" rel="noopener noreferrer" className="underline">
                 Caredove
@@ -58,7 +58,7 @@ function IndexPage() {
             }
           ].map((job, index) => (
             <div key={index} className="bg-gray-100 text-gray-900 rounded mt-4 p-4 w-full">
-              <div className="text-xs border-b border-gray-500 text-gray-600 pb-2 mb-4">{job.location}</div>
+              <div className="text-xs border-b border-gray-500 text-gray-700 pb-2 mb-4">{job.location}</div>
               <div className="block sm:flex items-center justify-between mb-4 sm:mb-0">
                 <strong className="text-lg block">{job.company}</strong>
                 <i className="text-xs block">{job.date}</i>
@@ -87,7 +87,7 @@ function IndexPage() {
             }
           ].map((school, index) => (
             <div key={index} className="bg-gray-100 text-gray-900 rounded mt-4 p-4 w-full">
-              <div className="text-xs border-b border-gray-500 text-gray-600 pb-2 mb-4">{school.location}</div>
+              <div className="text-xs border-b border-gray-500 text-gray-700 pb-2 mb-4">{school.location}</div>
               <div className="block sm:flex items-center justify-between mb-4 sm:mb-0">
                 <strong className="text-lg block">{school.name}</strong>
                 <i className="text-xs block">{school.date}</i>

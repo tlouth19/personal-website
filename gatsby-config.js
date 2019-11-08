@@ -10,7 +10,8 @@ module.exports = {
     twitter: `https://twitter.com/louther18`,
     linkedIn: `https://ca.linkedin.com/in/tyson-louth-816b6aa9`,
     email: `tysonlouth@gmail.com`,
-    devTo: `https://dev.to/tlouth19`
+    devTo: `https://dev.to/tlouth19`,
+    gitLab: `https://gitlab.com/tlouth19`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

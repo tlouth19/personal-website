@@ -5,6 +5,7 @@ import twitter from "../icons/twitter.svg"
 import linkedin from "../icons/linkedin.svg"
 import devTo from "../icons/devto.svg"
 import email from "../icons/email.svg"
+import gitLab from '../icons/gitLab.svg'
 
 const Icons = () => {
   return (
@@ -18,6 +19,7 @@ const Icons = () => {
               linkedIn
               email
               devTo
+              gitLab
             }
           }
         }
@@ -29,6 +31,11 @@ const Icons = () => {
             alt: "GitHub",
             icon: github,
             url: urls.github
+          },
+          {
+            alt: "GitLab",
+            icon: gitLab,
+            url: urls.gitLab
           },
           {
             alt: "dev.to",
@@ -53,8 +60,8 @@ const Icons = () => {
         ]
         return (
           <>
-            <div className="mt-3 pb-2 border-t-2 border-gray-800 loader loader-slow" />
-            <div className="flex items-center justify-center sm:justify-start py-2 loader loader-x-slow">
+            <div className="mt-3 pb-2 border-t-2 border-gray-800" />
+            <div className="flex items-center justify-center sm:justify-start py-2">
               {icons.map((icon, index) => (
                 <a key={index} target="_blank" rel="noopener noreferrer" href={icon.url} className="flex items-center mr-4">
                   <img src={icon.icon} className="h-6" alt={icon.alt} title={icon.alt} />
