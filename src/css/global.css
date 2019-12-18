@@ -16,3 +16,28 @@
   animation: up 1s forwards;
   /* animation-delay: 1s; */
 }
+
+
+a > span[data-tooltip] {
+ display: none;
+ top: 100%;
+ width: auto;
+ left: 50%;
+ transform: translateX(-50%);
+}
+
+a > span[data-tooltip]:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  background: black;
+  width: 12px;
+  height: 12px;
+}
+
+
+a:hover > span[data-tooltip], a:focus > span[data-tooltip] {
+  display: block;
+ }

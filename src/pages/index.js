@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="Front End Developer" keywords={[`developer`, `web developer`, `front end developer`, `react developer`]} />
-      <section className="fadeUp w-screen flex items-center justify-center p-4">
+      <section className="fadeUp flex items-center justify-center p-4">
         <div className="w-full sm:max-w-xl block sm:flex items-center justify-center">
           <ProfileImage />
           <div className="flex-auto mt-2 sm:mt-0 text-center sm:text-left">
@@ -32,7 +32,7 @@ function IndexPage() {
               company: "Caredove",
               date: "Oct 2019 to Present",
               role: "Senior Front End Developer",
-              exp: "React,Redux,Node.js",
+              exp: "React,Redux,Node.js,Jest,React Testing Library",
               location: "Orillia, Ontario, Canada"
             },
             {
