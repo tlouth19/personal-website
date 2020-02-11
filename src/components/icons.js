@@ -5,7 +5,7 @@ import twitter from "../icons/twitter.svg"
 import linkedin from "../icons/linkedin.svg"
 import devTo from "../icons/devto.svg"
 import email from "../icons/email.svg"
-import gitLab from '../icons/gitLab.svg'
+import gitLab from '../icons/gitlab.svg'
 
 const Icons = () => {
   return (
