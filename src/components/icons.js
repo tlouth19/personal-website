@@ -63,11 +63,8 @@ const Icons = () => {
             <div className="mt-3 pb-2 border-t-2 border-gray-800" />
             <div className="flex items-center justify-center sm:justify-start py-2">
               {icons.map((icon, index) => (
-                <a key={index} target="_blank" rel="noopener noreferrer" href={icon.url} className="flex items-center mx-2 sm:ml-0 sm:mr-4 relative">
+                <a key={index} data-tooltip={icon.alt} target="_blank" rel="noopener noreferrer" href={icon.url} className="flex items-center mx-2 sm:ml-0 sm:mr-4 relative">
                   <img src={icon.icon} className="h-6" alt={icon.alt} title={icon.alt} />
-                  <span data-tooltip className='absolute top-100 bg-black text-white rounded p-2 text-xs mt-2'>
-                    {icon.alt}
-                  </span>
                 </a>
               ))}
             </div>

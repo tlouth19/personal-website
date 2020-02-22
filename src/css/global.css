@@ -11,33 +11,30 @@
   }
 }
 
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:hover:after, [data-tooltip]:focus:after  {
+  display: block;
+} 
+
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 4px);
+  background: black;
+  transform: translateX(-50%);
+  padding: .33em .66em;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: none;
+  font-size: 12px;
+  z-index: 100;
+}
+
 .fadeUp {
   height: 100vh;
   animation: up 1s forwards;
-  /* animation-delay: 1s; */
 }
-
-
-a > span[data-tooltip] {
- display: none;
- top: 100%;
- width: auto;
- left: 50%;
- transform: translateX(-50%);
-}
-
-a > span[data-tooltip]:before {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  background: black;
-  width: 12px;
-  height: 12px;
-}
-
-
-a:hover > span[data-tooltip], a:focus > span[data-tooltip] {
-  display: block;
- }

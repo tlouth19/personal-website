@@ -4,6 +4,65 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Icons from "../components/icons"
 import ProfileImage from "../components/profile-image"
+import reactSVG from '../images/tools/react.svg'
+import reduxSVG from '../images/tools/redux.svg'
+import tailwindSVG from '../images/tools/tailwind.svg'
+import gatsbySVG from '../images/tools/gatsby.svg'
+import nodejsSVG from '../images/tools/nodejs.svg'
+import laravelSVG from '../images/tools/laravel.svg'
+import visualStudioSVG from '../images/tools/visual-studio-code.svg'
+import webpackSVG from '../images/tools/webpack.svg'
+import jestSvg from '../images/tools/jest.svg'
+import nextJsSVG from '../images/tools/nextjs.svg'
+
+let EXPERIENCE = [
+  {
+    company: "Caredove",
+    date: "Oct 2019 to Present",
+    role: "Senior Front End Developer",
+    location: "Orillia, Ontario, Canada"
+  },
+  {
+    company: "Teaching.com",
+    date: "May 2019 to Oct 2019",
+    role: "Product Developer",
+    location: "San Juan, Puerto Rico (Remote)"
+  },
+  {
+    company: "BitCine (CineSend)",
+    date: "June 2015 to May 2019",
+    role: "Lead Front End Developer",
+    location: "Toronto, Ontario, Canada"
+  },
+  {
+    company: "Freelance",
+    date: "Jan 2013 to June 2015",
+    role: "Web Developer",
+    location: "Orillia, Ontario, Canada"
+  }
+]
+
+let EDUCATION = [
+  {
+    name: "Pfeiffer University",
+    date: "Aug 2009 to May 2013",
+    degree: "Bachelor's Degree, Computer Information Systems",
+    location: "Charlotte, North Carolina"
+  }
+]
+
+let TOOLS = [
+  { icon: reactSVG, alt: "React" },
+  { icon: reduxSVG, alt: "Redux" },
+  { icon: nextJsSVG, alt: "Next.js"},
+  { icon: gatsbySVG, alt: "Gatsby" },
+  { icon: tailwindSVG, alt: "Tailwind" },
+  { icon: jestSvg, alt: "Jest" },
+  { icon: webpackSVG, alt: "Webpack" },
+  { icon: nodejsSVG, alt: "NodeJS" },
+  { icon: laravelSVG, alt: "Laravel" },
+  { icon: visualStudioSVG, alt: "Visual Studio Code"}
+]
 
 function IndexPage() {
   return (
@@ -24,39 +83,10 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section className="p-4 pb-64">
+      <section className="px-4 pb-64">
         <div className="w-full sm:max-w-xl mx-auto">
-          <h1 className="text-2xl font-bold">Experience</h1>
-          {[
-            {
-              company: "Caredove",
-              date: "Oct 2019 to Present",
-              role: "Senior Front End Developer",
-              exp: "React,Redux,Node.js,Jest,React Testing Library",
-              location: "Orillia, Ontario, Canada"
-            },
-            {
-              company: "Teaching.com",
-              date: "May 2019 to Oct 2019",
-              role: "Product Developer",
-              exp: "React,Redux,Node.js,PHP,Zend,Laravel,SASS,Webpack",
-              location: "San Juan, Puerto Rico (Remote)"
-            },
-            {
-              company: "BitCine Technologies",
-              date: "June 2015 to May 2019",
-              role: "Lead Front End Developer",
-              exp: "React,Redux,Gatsby,TypeScript,Node.js,PHP,Laravel,AWS,Vue,CSS-in-JS,SASS,LESS,S3,Lambda,Webpack,Gulp",
-              location: "Toronto, Ontario, Canada"
-            },
-            {
-              company: "Freelance",
-              date: "Jan 2013 to June 2015",
-              role: "Web Developer",
-              exp: "jQuery,React,Wordpress,Drupal,HTML,CSS,PHP,Gulp",
-              location: "Orillia, Ontario, Canada"
-            }
-          ].map((job, index) => (
+          <h2 className="text-2xl font-bold">Experience</h2>
+          {EXPERIENCE.map((job, index) => (
             <div key={index} className="bg-gray-100 text-gray-900 rounded mt-4 p-4 w-full">
               <div className="text-xs border-b border-gray-500 text-gray-700 pb-2 mb-4">{job.location}</div>
               <div className="block sm:flex items-center justify-between mb-4 sm:mb-0">
@@ -64,28 +94,15 @@ function IndexPage() {
                 <i className="text-xs block">{job.date}</i>
               </div>
               <p className="text-sm mb-2">{job.role}</p>
-              <ul className="flex flex-wrap items-start">
-                {job.exp.split(",").map((e) => (
-                  <li key={e} className="bg-gray-400 text-gray-700 rounded px-1 text-xs mr-2 mt-2">
-                    {e}
-                  </li>
-                ))}
-              </ul>
+             
             </div>
           ))}
         </div>
       </section>
-      <section className="p-4 pb-64">
+      <section className="px-4 pb-64">
         <div className="w-full sm:max-w-xl mx-auto">
-          <h1 className="text-2xl font-bold">Education</h1>
-          {[
-            {
-              name: "Pfeiffer University",
-              date: "Aug 2009 to May 2013",
-              degree: "Bachelor's Degree, Computer Information Systems",
-              location: "Charlotte, North Carolina"
-            }
-          ].map((school, index) => (
+          <h2 className="text-2xl font-bold">Education</h2>
+          {EDUCATION.map((school, index) => (
             <div key={index} className="bg-gray-100 text-gray-900 rounded mt-4 p-4 w-full">
               <div className="text-xs border-b border-gray-500 text-gray-700 pb-2 mb-4">{school.location}</div>
               <div className="block sm:flex items-center justify-between mb-4 sm:mb-0">
@@ -95,6 +112,18 @@ function IndexPage() {
               <p className="text-sm mb-2">{school.degree}</p>
             </div>
           ))}
+        </div>
+      </section>
+      <section className='px-4 pb-64'>
+        <div className="w-full sm:max-w-xl mx-auto">
+          <h2 className="text-2xl font-bold">My Favourite Tools</h2>
+          <div className='flex flex-wrap items-center -mx-2 mt-2'>
+            {TOOLS.map((tool) => 
+              <div key={tool.alt} className='w-24 h-24 m-2 bg-white rounded-full flex items-center justify-center p-4'  data-tooltip={tool.alt}>
+                <img src={tool.icon} alt={tool.alt} className='w-full'/>
+              </div>
+            )}
+          </div>
         </div>
       </section>
     </Layout>
