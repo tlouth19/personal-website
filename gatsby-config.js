@@ -2,31 +2,32 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Tyson Louth`,
-    description: `The personal website of Tyson Louth, a Front End Developer from Orillia, Ontario, Canada.`,
+    title: "Tyson Louth",
+    description: "The personal website of Tyson Louth, a Front End Developer from Orillia, Ontario, Canada.",
     siteUrl: "https://www.tysonlouth.com",
-    author: `@louther18`,
-    github: `https://github.com/tlouth19`,
-    twitter: `https://twitter.com/louther18`,
-    linkedIn: `https://ca.linkedin.com/in/tyson-louth-816b6aa9`,
-    email: `tysonlouth@gmail.com`,
-    devTo: `https://dev.to/tlouth19`,
-    gitLab: `https://gitlab.com/tlouth19`
+    author: "@louther18",
+    github: "https://github.com/tlouth19",
+    twitter: "https://twitter.com/louther18",
+    linkedIn: "https://ca.linkedin.com/in/tyson-louth-816b6aa9",
+    email: "tysonlouth@gmail.com",
+    devTo: "https://dev.to/tlouth19",
+    gitLab: "https://gitlab.com/tlouth19"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`)
+        name: "images",
+        path: path.join(__dirname, "src", "images")
       }
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: "Tyson Louth",
         short_name: "TL",
@@ -34,10 +35,10 @@ module.exports = {
         background_color: "#1a202c",
         theme_color: "#edf2f7",
         display: "minimal-ui",
-        icon: `src/icons/favicon.png`
+        icon: "src/icons/favicon.png"
       }
     },
-    `gatsby-plugin-postcss`,
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -46,7 +47,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-120787737-1",
         head: false
