@@ -17,8 +17,14 @@ import nextJsSVG from '../images/tools/nextjs.svg'
 
 let EXPERIENCE = [
   {
+    company: "Commerce7",
+    date: "June 2020 to Present",
+    role: "Front End Developer",
+    location: "Vancouver, BC, Canada (Remote)"
+  },
+  { 
     company: "Caredove",
-    date: "Oct 2019 to Present",
+    date: "Oct 2019 to June 2020",
     role: "Senior Front End Developer",
     location: "Orillia, Ontario, Canada"
   },
@@ -74,9 +80,9 @@ function IndexPage() {
           <div className="flex-auto mt-2 sm:mt-0 text-center sm:text-left">
             <h1 className="text-2xl font-bold">Tyson Louth</h1>
             <p className="text-gray-400">
-              Senior Front End Developer at{" "}
-              <a href="https://caredove.com" target="_blank" rel="noopener noreferrer" className="underline">
-                Caredove
+              Front End Developer at{" "}
+              <a href="https://commerce7.com" target="_blank" rel="noopener noreferrer" className="underline">
+                Commerce7
               </a>
             </p>
             <Icons />
